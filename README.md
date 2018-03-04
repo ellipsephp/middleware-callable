@@ -2,7 +2,7 @@
 
 [Psr-15 middleware](https://www.php-fig.org/psr/psr-15/) proxying a callable.
 
-**Require** php >= 7.1
+**Require** php >= 7.0
 
 **Installation** `composer require ellipse/middleware-callable`
 
