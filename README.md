@@ -1,6 +1,6 @@
 # Middleware callable
 
-[Psr-15 middleware](https://www.php-fig.org/psr/psr-15/) proxying a callable.
+This package provides a [Psr-15](https://www.php-fig.org/psr/psr-15/) middleware proxying a callable.
 
 **Require** php >= 7.0
 
@@ -8,13 +8,13 @@
 
 **Run tests** `./vendor/bin/kahlan`
 
-- [Getting started](https://github.com/ellipsephp/middleware-callable#getting-started)
+- [Using callables as middleware](#using-callables-as-middleware)
 
-## Getting started
+## Using callables as middleware
 
-The class ```Ellipse\Middleware\CallableMiddleware``` can be wrapped around a callable in order to use it as a middleware.
+The class `Ellipse\Middleware\CallableMiddleware` can be wrapped around a callable in order to use it as a middleware.
 
-As any middleware ```->process()``` method, the callable takes implementations of `Psr\Http\Message\ServerRequestInterface` and `Psr\Http\Server\RequestHandlerInterface` as parameter and should return an implementation of `Psr\Http\Message\ResponseInterface`.
+As any middleware `->process()` method, the callable receive implementations of `Psr\Http\Message\ServerRequestInterface` and `Psr\Http\Server\RequestHandlerInterface` as parameters and should return an implementation of `Psr\Http\Message\ResponseInterface`.
 
 ```php
 <?php
